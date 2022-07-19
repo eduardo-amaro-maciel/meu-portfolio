@@ -514,7 +514,6 @@ html {
 
 .card:hover {
     background-color: var(--cor-verde-1);
-    opacity: .9;
 }
 
 .card:hover i {
