@@ -475,6 +475,20 @@ html {
     border-radius: 60px !important;
 }
 
+.uk-slider-items {
+    width: 100%;
+    padding-right: 0;
+    margin: 0;
+}
+
+.uk-slider-container-offset {
+    margin: 0;
+}
+
+#projetos > .container-1200 {
+    padding-right: 0;
+}
+
 /* Quinta sessão contato */
 
 #contato {
