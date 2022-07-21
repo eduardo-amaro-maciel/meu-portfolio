@@ -9,6 +9,12 @@
     <meta name="author" content="Eduardo Amaro Maciel">
     <meta name="robots" content="index, follow">
     <meta name="keywords" content="Portfolio, Eduardo Amaro Maciel, HTML">
+    <!-- Chrome, Firefox OS and Opera -->
+    <meta name="theme-color" content="#66ff66">
+    <!-- Windows Phone -->
+    <meta name="msapplication-navbutton-color" content="#66ff66">
+    <!-- iOS Safari -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="#66ff66">
 
     <link rel="stylesheet" href="./src/css/style.css">
     <link rel="shortcut icon" href="./assets/icons/alien-2.ico" type="image/x-icon">
@@ -16,17 +22,19 @@
     <!-- UIkit CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.15.1/dist/css/uikit.min.css" />
 
+    <!-- <link rel="icon" sizes="192x192" href="assets/icons/alien-2.png"> -->
+
     <title>Eduardo Amaro Maciel</title>
 </head>
 
 <body id="home">
 
-    <!-- pre loader gif --> 
+    <!-- pre loader gif -->
     <div id="preloader">
         <div class="inner">
             <img src="assets/gif/loader-3.gif" alt="loarder da pagina">
         </div>
-    </div>
+    </div>  
 
     <!-- Primeira sessão header --> 
     
@@ -42,6 +50,32 @@
                     <li class="item-list-menu-top"><a href="#contato">Contato</a></li>
                     <li class="item-list-menu-top"><a target="_blank" href="https://github.com/eduardo-amaro-maciel"><i class="fa-brands fa-github"></i></a></li>
                 </ul>
+                <div class="menu-none">
+                    <nav class="uk-navbar-container" uk-navbar style="background-color: transparent;">
+                        <div class="uk-navbar-right">
+                            <ul class="uk-navbar-nav">
+                                <li>
+                                    <a href="#"><i class="fa-solid fa-bars" style="color: var(--cor-verde-1); font-size: 30px;"></i></a>
+                                    <div class="uk-navbar-dropdown">
+                                        <ul class="uk-nav uk-navbar-dropdown-nav">
+                                            <li class="item-list-menu-top"><a href="#home">Home</a></li>
+                                            <li class="uk-nav-divider"></li>
+                                            <li class="item-list-menu-top"><a href="#sobre">Sobre</a></li>
+                                            <li class="uk-nav-divider"></li>
+                                            <li class="item-list-menu-top"><a href="#skills">Skills</a></li>
+                                            <li class="uk-nav-divider"></li>
+                                            <li class="item-list-menu-top"><a href="#projetos">Projetos</a></li>
+                                            <li class="uk-nav-divider"></li>
+                                            <li class="item-list-menu-top"><a href="#contato">Contato</a></li>
+                                            <li class="uk-nav-divider"></li>
+                                            <li class="item-list-menu-top"><a target="_blank" href="https://github.com/eduardo-amaro-maciel"></i>GitHub</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
             </nav>
             <div class="display-top-info">
                 <ul>
@@ -75,9 +109,9 @@
                     <img src="./assets/img/foto-perfil.jpg" alt="" class="foto-perfil">
                 </div>
                 <div class="container-texto-sobre">
-                    <div class="container-planetas-sobre">
+                    <div class="container-divisoria-sobre">
                         <b></b>
-                        <img src="./assets/icons/alien-2.png" alt="" class="planetas-sobre">
+                        <img src="./assets/icons/alien-2.png" alt="" class="img-divisoria">
                     </div>
                     <div class="box-texto-sobre">
                         <p class="paragrafo-texto-sobre">
@@ -94,7 +128,7 @@
                             mais voltadas para a parte Front-End onde possuo 
                             maiores conhecimentos.
                         </p>
-                        <button id="btn-curriculo"><span><a href="#contato">vamos conversar</a></span></button >
+                        <button id="btn-para-contato"><span><a href="#contato">vamos conversar</a></span></button >
                     </div>
                 </div>
             </div>
@@ -282,19 +316,19 @@
                 <span>XXXX</span>
             </div>
             <div class="cards-contato" uk-scrollspy="cls: uk-animation-fade; target: .card; delay: 300; repeat: true">
-                <div class="card" uk-scrollspy-class="uk-animation-slide-top">
+                <div class="card card-1" uk-scrollspy-class="uk-animation-slide-top">
                     <i class="fa-brands fa-linkedin-in"></i>
                     <a target="_blank" href="https://www.linkedin.com/in/eduardo5555/">Linkedin</a>
                 </div>
-                <div  class="card" uk-scrollspy-class="uk-animation-slide-top">
+                <div  class="card card-2" uk-scrollspy-class="uk-animation-slide-top">
                     <i class="fa-brands fa-whatsapp"></i>
                     <a target="_blank" href="https://wa.me/5547997624220?text=Ol%C3%A1,%20me%20chamo%20Eduardo%20Amaro,%20sou%20desenvolvedor%20front-end,%20vamos%20conversar?">Whatssapp</a>
                 </div>
-                <div  class="card" uk-scrollspy-class="uk-animation-slide-top">
+                <div  class="card card-3" uk-scrollspy-class="uk-animation-slide-top">
                     <i class="fa-solid fa-envelope"></i>
                     <a target="_blank" href="https://mail.google.com/mail/?view=cm&fs=1&to=eduardo.amaro164@gmail.com">E-mail</a>
                 </div>
-                <div class="card" uk-scrollspy-class="uk-animation-slide-top">
+                <div class="card card-4" uk-scrollspy-class="uk-animation-slide-top">
                     <i class="fa-brands fa-instagram"></i>
                     <a target="_blank" href="https://www.instagram.com/eduamaro.m/">INSTAGRAM</a>
                 </div>
