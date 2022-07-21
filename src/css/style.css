@@ -114,6 +114,7 @@ html {
     justify-content: space-between;
     align-items: center;
     backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px)
 }
 
 .logo {
@@ -517,6 +518,7 @@ html {
     align-items: center;
     justify-content: center;
     backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px)
 }
 
 .card i {
